@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IDistributedCacheRedisApp.Web.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace IDistributedCacheRedisApp.Web.Controllers
 {
@@ -19,16 +22,38 @@ namespace IDistributedCacheRedisApp.Web.Controllers
             DistributedCacheEntryOptions cacheEntryOptions = new DistributedCacheEntryOptions();
 
             cacheEntryOptions.AbsoluteExpiration = DateTime.Now.AddMinutes(1);
-            _distributedCache.SetString("name", "kadir", cacheEntryOptions);
-            await _distributedCache.SetStringAsync("surname", "liçina", cacheEntryOptions);
+
+            Products products = new Products { Id = 1, Name = "Kalem", Price = 100 };
+            string jsonproduct = JsonConvert.SerializeObject(products);
+
+
+            Byte[] bytes = Encoding.UTF8.GetBytes(jsonproduct);
+            _distributedCache.Set("product:1", bytes);
+
+
+            //await _distributedCache.SetStringAsync("product:1", jsonproduct, cacheEntryOptions);
+
+
+
             return View();
         }
 
-        public async Task<IActionResult> Show() 
+        public async Task<IActionResult> Show()
+
         {
-            string name = _distributedCache.GetString("name");
-            ViewBag.name = name;
-            return View(); 
+
+            Byte[] bytes = _distributedCache.Get("product:1");
+
+            string jsonproduct = Encoding.UTF8.GetString(bytes);
+
+
+
+
+            Products product = JsonConvert.DeserializeObject<Products>(jsonproduct);
+
+
+            ViewBag.product = product;
+            return View();
         }
 
         public IActionResult Remove()
