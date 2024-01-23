@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lea5G25y80Y7Jx84Aqkqxmrk3q4WHqJGSottOPR+M9A=",
+  "Hash": "LY5ol6n3GqT55s3p5AK+Kjq6GMurf8WNT1D6Y/sSJW8=",
   "Source": "IDistributedCacheRedisApp.Web",
   "BasePath": "_content/IDistributedCacheRedisApp.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\kadir\\OneDrive\\Masaüstü\\RedisInMemory\\IDistributedCacheRedisApp.Web\\wwwroot\\images\\bosna.jpg",
+      "SourceId": "IDistributedCacheRedisApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kadir\\OneDrive\\Masaüstü\\RedisInMemory\\IDistributedCacheRedisApp.Web\\wwwroot\\",
+      "BasePath": "_content/IDistributedCacheRedisApp.Web",
+      "RelativePath": "images/bosna.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bosna.jpg"
     },
     {
       "Identity": "C:\\Users\\kadir\\OneDrive\\Masaüstü\\RedisInMemory\\IDistributedCacheRedisApp.Web\\wwwroot\\js\\site.js",
