@@ -4,32 +4,14 @@ namespace RedisExchangeAPI.Web.Services
 {
     public class RedisService
     {
-        private readonly string _redishost;
 
-        private readonly string _redisport;
+        private readonly ConnectionMultiplexer _redis; //connection for redis server.//
 
-        private ConnectionMultiplexer _redis; //connection for redis server.//
-
-        public IDatabase db { get; set; }
-
-        public RedisService(IConfiguration configuration)
+        public RedisService(string url)
         {
-            _redishost = configuration["Redis:Host"];
-            _redisport = configuration["Redis:Port"];
-        }
-
-
-
-
-        //The communication of the redis server, which we specified in appseting, took place with the connetcion method.//
-        public void Connet()
-        {
-            var configserver = $"{_redishost}:{_redisport}";
-
-            _redis = ConnectionMultiplexer.Connect(configserver);
+            _redis = ConnectionMultiplexer.Connect(url);  //The communication of the redis server, which we specified in appseting, took place with the connetcion method.//
 
         }
-
 
         public IDatabase GetDb(int db)
         {
