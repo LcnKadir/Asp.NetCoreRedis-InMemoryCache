@@ -26,9 +26,15 @@ namespace RedisExchangeAPI.Web.Controllers
                 //    list.Add(x.ToString());
                 //});
 
+                //Data büyükten küçüğe doğru sıralanıyor./ Data sorted from largest to smallest. 
+                //db.SortedSetRangeByRank(listkey, order: Order.Descending).ToList().ForEach(x =>
+                //{ 
+                //list.Add(x.ToString());
+                //});
+
                 db.SortedSetRangeByRank(listkey, order: Order.Descending).ToList().ForEach(x =>
-                { 
-                list.Add(x.ToString());
+                {
+                    list.Add(x.ToString());
                 });
             }
 
