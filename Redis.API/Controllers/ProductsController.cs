@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Redis.API.Models;
 using Redis.API.Repository;
+using StackExchange.Redis;
 
 namespace Redis.API.Controllers
 {
@@ -10,10 +11,13 @@ namespace Redis.API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IProductRepository _repository;
+        private IDatabase _database;
 
-        public ProductsController(IProductRepository repository)
+        public ProductsController(IProductRepository repository, IDatabase database)
         {
             _repository = repository;
+            _database = database;
+            _database.StringSet("kadir", "liçina");
         }
 
         [HttpGet]
