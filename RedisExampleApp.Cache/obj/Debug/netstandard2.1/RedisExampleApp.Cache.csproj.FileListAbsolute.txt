@@ -1,0 +1,10 @@
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\bin\Debug\netstandard2.1\RedisExampleApp.Cache.deps.json
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\bin\Debug\netstandard2.1\RedisExampleApp.Cache.dll
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\bin\Debug\netstandard2.1\RedisExampleApp.Cache.pdb
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.csproj.AssemblyReference.cache
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.AssemblyInfoInputs.cache
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.AssemblyInfo.cs
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.csproj.CoreCompileInputs.cache
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.dll
+C:\Users\kadir\OneDrive\Masaüstü\RedisInMemory\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.pdb
